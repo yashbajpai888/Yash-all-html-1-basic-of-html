@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormElements</title>
+</head>
+
+<body>
+    <!--
+        The HTML <form> Elements
+    The HTML <form> element can contain one or more of the following form elements:
+
+    <input>
+    <label>
+    <select>
+    <textarea>
+    <button>
+    <fieldset>
+    <legend>
+    <datalist>
+    <output>
+    <option>
+    <optgroup>
+    -->
+
+    <!--
+        The <label> Element
+        The <label> element defines a label for several form elements.
+
+        The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label 
+        when the user focus on the input element.
+
+        The <label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) 
+        - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+
+        The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+    -->
+    <!--
+        option element defines the option that can be selected
+        To define a pre-selected option, add the selected attribute to the option:
+    -->
+
+
+    <!--For Cars-->
+    <label for="cars">Choose a car:</label>
+    <select name="cars" id="cars">
+        <option value="--Select--">--Select--</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Ferrari">Ferrari</option>
+        <option value="Porshe">Porshe</option>
+        <option value="Audii">Audii</option>
+        <option value="GWagon">GWagon</option>
+    </select>
+    <hr>
+    <br> <br>
+
+
+    <!-- Fruits with using {size, multiple }-->
+    <!-- Note hold ctlr to select multiple options-->
+    <label for="fruits">Choose a fruits:</label>
+    <select name="fruits" id="fruits" size="2" multiple>
+        <option value="Mango">Mango</option>
+        <option value="Apple">Apple</option>
+        <option value="Litchi">Litchi</option>
+        <option value="WaterMelon">WaterMelon</option>
+    </select>
+    <hr>
+
+    <!-- Textarea defines multi-line input field -->
+    <textarea name="Message" id="Message" cols="30" rows="10" width="100" style="width: 100%; height: 100px;">
+The Cat was playing in a garden
+    </textarea>
+    <hr>
+
+    <!-- Button element
+    The <button> element defines a clickable button:
+-->
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    <hr>
+
+    <!--
+    The <fieldset> and <legend> Elements
+    The <fieldset> element is used to group related data in a form.
+    The <legend> element defines a caption for the <fieldset> element.
+    -->
+    <form action="aciton_page.php">
+        <fieldset>
+            <legend>Yash:-</legend>
+            fname:-<input type="text" name="fname" id="fname" value=""> <br>
+            lname:-<input type="text" name="lname" id="lname" value=""> <br>
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </fieldset> <br> <br>
+
+        <fieldset>
+            <legend>Yash:-</legend>
+            <label for="fname">fname</label>
+            <input type="text" name="fname" id="fname" value=""> <br>
+
+            <label for="lname">lname</label>
+            <input type="text" name="lname" id="lname" value=""> <br>
+
+            <label for="Submit"></label>
+            <input type="submit" name="submit" id="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <form action="/action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+        <input type="Submit" name="" id="" value="Submit">
+    </form>
+
+    <hr>
+    <!-- Output element-->
+    <form action="/action.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0
+        <input type="range" name="a" id="a" value="50">
+        100+
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br><br>
+        <input type="submit">
+    </form>
+
+
+</body>
+
+</html>

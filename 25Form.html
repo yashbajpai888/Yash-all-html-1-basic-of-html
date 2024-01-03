@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25Form.html</title>
+</head>
+
+<body>
+    <!--
+        List of All <form> Attributes
+        Attribute	Description
+        accept-charset--	Specifies the character encodings used for form submission
+        action--	Specifies where to send the form-data when a form is submitted
+        autocomplete--	Specifies whether a form should have autocomplete on or off
+        enctype--	Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+        method--	Specifies the HTTP method to use when sending form-data
+        name--	Specifies the name of the form
+        novalidate--	Specifies that the form should not be validated when submitted
+        rel--	Specifies the relationship between a linked resource and the current document
+        target--	Specifies where to display the response that is received after submitting the form
+
+        <form action="action_page.php" target="_self" autocomplete="on" accept-charset="utf-8" enctype="multipart/form-data"
+        enctype="multipart/form-data" rel=""></form>
+    -->
+    
+    <!--
+        <label> element is useful for screen-reader users, because
+        the screen-reader will read out the label when the user focuses on
+        the input element.
+    -->
+    <form action="action_page.php" target="_self" autocomplete="on" accept-charset="utf-8">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="fname"><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname"><br>
+
+        <!-- Radio -->
+        <p>Choose Your Favourite Language</p>
+        <input type="radio">HTML <br>
+        <input type="radio">C <br>
+        <input type="radio">C++ <br>
+        <input type="radio">Javascript <br>
+
+        <!-- Checkbox -->
+        <p>Choose Ur Fav Fruit</p>
+        <input type="checkbox">Mango <br>
+        <input type="checkbox">Apple <br>
+        <input type="checkbox">Pomegranate <br>
+        <input type="checkbox">Pomegranate <br>
+        <input type="checkbox">WaterMelon <br>
+
+        <!-- Submit-->
+        <input type="Submit" value="Submit"> <br>
+
+        <!-- Reset -->
+        <input type="Reset" value="Reset"> <br>
+
+    </form>
+</body>
+
+</html>
